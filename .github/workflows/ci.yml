@@ -1,0 +1,23 @@
+name: Trigger on Every Push
+
+# This section controls when the workflow will run
+on:
+  push:
+    branches:
+      - '**' # Matches every single branch push
+
+jobs:
+  build-and-test:
+    # Use 'self-hosted' for your runner, or 'ubuntu-latest' for GitHub servers
+    runs-on: self-hosted
+
+    steps:
+      # Step 1: Download the repository code onto the runner
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Run a test command to verify it triggers
+      - name: Run a Welcome Script
+        run: |
+          echo "Workflow triggered successfully!"
+          echo "Commit hash: ${{ github.sha }}"
