@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "nafitte/serveradmin",
+  "pipelineDirectory": "serveradmin",
+  "workspaceDirectory": "serveradmin/serveradmin",
+  "repositories": {
+    "nafitte/serveradmin": {
+      "repositoryPath": "serveradmin/serveradmin",
+      "lastRunOn": "06/03/2026 11:52:01 +05:00"
+    }
+  },
+  "lastRunOn": "06/03/2026 11:58:24 +05:00"
+}
